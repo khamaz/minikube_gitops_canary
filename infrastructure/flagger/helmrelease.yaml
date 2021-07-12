@@ -12,6 +12,7 @@ spec:
         kind: HelmRepository
         name: flagger
         namespace: flagger
-      valuesFiles:
-        - values.yaml
       interval: 1m
+  values:
+    prometheus.install: true
+    meshProvider: kubernetes
