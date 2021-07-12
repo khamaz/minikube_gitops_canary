@@ -14,5 +14,6 @@ spec:
         namespace: flagger
       interval: 1m
   values:
-    prometheus.install: true
+    prometheus:
+      install: true
     meshProvider: kubernetes
